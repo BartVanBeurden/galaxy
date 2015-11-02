@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Planet Generator</title>
+		<link rel="stylesheet" href="./app.css">
+		<script src="./app.js"></script>
+	</head>
+	
+	<body>
+		<div class="modal">
+			<div class="field">
+				<label>Planet Seed
+					<input type="number" name="planet.seed" value="0">
+				</label>
+			</div>
+			<div class="field">
+				<label>Animate
+					<input type="checkbox" name="view.animate">
+				</label>
+			</div>
+			<div class="field">
+				<label>View Size</label>
+					<select type="number" name="view.detail">
+						<option value="3">64 x 64</option>
+						<option value="4">128 x 128</option>
+						<option value="5" selected>256 x 256</option>
+						<option value="6">512 x 512</option>
+						<option value="7">1024 x 1024</option>
+						<option value="8">2048 x 2048</option>
+					</select>
+				</label>
+			</div>
+		</div>
+		<main>
+			<canvas name="view"></canvas>
+		</main>
+	</body>
+	
+</html>
